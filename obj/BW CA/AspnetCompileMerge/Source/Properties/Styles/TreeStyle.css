@@ -1,0 +1,274 @@
+﻿TreeStyle.css
+
+/*
+.TreeView 
+{ 
+  background-color:White;
+  padding-top:4px; 
+  padding-left:1px; 
+  border: #7C7C94 1px solid; 
+  cursor:default; 
+  text-align: left;
+}
+
+.tvItemRow
+{
+    font-size:9pt;
+    border: none;
+    padding:0;
+    width:auto;
+    text-align:left;
+}
+
+*/
+
+/* TreeView Table Properties */
+/*
+div.TreeViewTable
+{
+    border: none;
+    border-bottom: none;
+    padding:0;
+    text-align:left;
+}
+
+div.TreeViewTable table {
+    width:inherit;
+
+}
+
+div.TreeViewTable table tr th {
+    border: none;
+    padding: 0px;
+    letter-spacing: 1px;
+}
+
+div.TreeViewTable table tr td {
+    border: none;
+    padding: 0px;
+    letter-spacing: 1px;
+
+}
+
+div.TreeViewTable table tr.alt td {
+    background-color:#EFEFEF;
+}
+*/
+
+
+
+
+
+
+/* --------------------------------------------- */
+
+
+
+
+
+.TreeView 
+{ 
+  background-color:Red;
+  /* border: #919191 1px solid;  */
+  padding-top:2px;
+  cursor: default; 
+}
+
+
+.Def_TextContCss
+{ 
+  font-family: sans-serif, tahoma; 
+  font-size: 11px; 
+  padding:1px;
+  padding-left: 3px; 
+  padding-right: 3px;   
+  padding-top:1px;
+  padding-bottom:3px;
+}
+
+.Hov_TextContCss
+{ 
+  font-family: sans-serif, tahoma; 
+  font-size: 11px; 
+  padding:1px;
+  padding-left: 3px; 
+  padding-right: 3px; 
+  padding-top:1px;
+  padding-bottom:3px;
+  color: #648bcb; 
+  text-decoration: underline; 
+  cursor: default; 
+}
+
+.Act_TextContCss
+{ 
+  font-family: sans-serif, tahoma; 
+  font-size: 11px; 
+  padding:1px;
+  padding-left: 4px; 
+  padding-right: 3px;
+  padding-top:1px;
+  padding-bottom:3px; 
+  background-color: #a0a0a0;   
+}
+
+
+
+.tvTextCell
+{
+    background-color:Red;
+}
+
+
+
+
+
+/* Fast Track Red Colour                                     */
+.DefR_TextContCss
+{ 
+  font-family: sans-serif, tahoma; 
+  font-size: 11px; 
+  padding:1px;
+  padding-left: 3px; 
+  padding-right: 3px;   
+  padding-top:1px;
+  padding-bottom:3px;
+  background-color:Red;
+}
+
+.HovR_TextContCss
+{ 
+  font-family: sans-serif, tahoma; 
+  font-size: 11px; 
+  padding:1px;
+  padding-left: 3px; 
+  padding-right: 3px; 
+  padding-top:1px;
+  padding-bottom:3px;
+  color: #648bcb; 
+  text-decoration: underline; 
+  cursor: default; 
+  background-color:Red;
+}
+
+.ActR_TextContCss
+{ 
+  font-family: sans-serif, tahoma; 
+  font-size: 11px; 
+  padding:1px;
+  padding-left: 4px; 
+  padding-right: 3px;
+  padding-top:1px;
+  padding-bottom:3px; 
+  /*background-color: #a0a0a0;   */
+  background-color:Red;
+  color:Red;
+}
+
+.tvTextCell_R
+{
+    background-color:Red;
+}
+.tvTextCont_R
+{
+    color:Red;
+    background-color:Red;
+}
+
+
+/* Fast Track Yellow Colour                                     */
+.DefY_TextContCss
+{ 
+  font-family: sans-serif, tahoma; 
+  font-size: 11px; 
+  padding:1px;
+  padding-left: 3px; 
+  padding-right: 3px;   
+  padding-top:1px;
+  padding-bottom:3px;
+  background-color:Yellow;
+}
+
+.HovY_TextContCss
+{ 
+  font-family: sans-serif, tahoma; 
+  font-size: 11px; 
+  padding:1px;
+  padding-left: 3px; 
+  padding-right: 3px; 
+  padding-top:1px;
+  padding-bottom:3px;
+  color: #648bcb; 
+  text-decoration: underline; 
+  cursor: default; 
+  background-color:Yellow;
+}
+
+.ActY_TextContCss
+{ 
+  font-family: sans-serif, tahoma; 
+  font-size: 11px; 
+  padding:1px;
+  padding-left: 4px; 
+  padding-right: 3px;
+  padding-top:1px;
+  padding-bottom:3px; 
+  /* background-color: #a0a0a0;    */
+  background-color:Yellow;
+}
+
+.tvTextCell_Y
+{
+    background-color:Yellow;
+}
+
+.tvTextCont_Y
+{
+    background-color:Yellow;
+}
+
+/* Fast Track Good Colour                                     */
+.DefG_TextContCss
+{ 
+  font-family: sans-serif, tahoma; 
+  font-size: 11px; 
+  padding:1px;
+  padding-left: 3px; 
+  padding-right: 3px;   
+  padding-top:1px;
+  padding-bottom:3px;
+}
+
+.HovG_TextContCss
+{ 
+  font-family: sans-serif, tahoma; 
+  font-size: 11px; 
+  padding:1px;
+  padding-left: 3px; 
+  padding-right: 3px; 
+  padding-top:1px;
+  padding-bottom:3px;
+  color: #648bcb; 
+  text-decoration: underline; 
+  cursor: default; 
+}
+
+.ActG_TextContCss
+{ 
+  font-family: sans-serif, tahoma; 
+  font-size: 11px; 
+  padding:1px;
+  padding-left: 4px; 
+  padding-right: 3px;
+  padding-top:1px;
+  padding-bottom:3px; 
+  background-color: #a0a0a0;   
+}
+.tvTextCell_G
+{
+
+}
+
+.tvTextCont_G
+{
+}

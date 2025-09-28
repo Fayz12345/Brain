@@ -1,0 +1,245 @@
+11/5/2021 10:45:23.88: Started.
+11/5/2021 10:45:24.63: WriteInsert.
+11/5/2021 10:45:32.05: End.
+11/5/2021 11:11:34.82: Started batch:AB1.
+11/5/2021 11:11:34.83: WriteInsert.
+11/5/2021 11:11:35.13: ProcessResultFirstSend LogID:48.
+11/5/2021 11:11:37.16: ProcessBatch LogID:48.
+11/5/2021 11:11:37.18: Read LogID:48.
+11/5/2021 11:11:39.05: Read HeaderDone LogID:48.
+11/5/2021 11:11:39.07:    Read Device:45851009999539x.
+11/5/2021 11:11:39.10:       Read Attribute:Carrier V:BEL.
+11/5/2021 11:11:39.10:       Read Attribute:Manufacturer V:aaa.
+11/5/2021 11:11:39.10:       Read Attribute:Model V:A12418Gjj.
+11/5/2021 11:11:39.12:       Read Attribute:Colour V:BLK.
+11/5/2021 11:11:39.12:       Read Attribute:Disposition V:NotAssessed.
+11/5/2021 11:11:39.13:       Read Attribute:Provider V:FSL.
+11/5/2021 11:11:39.13:       Read Attribute:Grade V:A.
+11/5/2021 11:11:39.16:       Read Attribute:Product Place V:ASSURANT.
+11/5/2021 11:11:39.16:    Read Device DONE.
+11/5/2021 11:11:39.16:    Receive Process.
+11/5/2021 11:11:39.87:    Receive Process Loaded.
+11/5/2021 11:11:39.87:    Receive Process WriteProcessLogEnd.
+11/5/2021 11:11:39.90: End.
+11/5/2021 11:11:39.91:    Receive Process Ready to Save.
+11/5/2021 11:11:39.93:    Receive Process Save Complete.
+11/5/2021 11:42:35.17: Started batch:AB1 Path:C:\Users\JimHome\Documents\Visual Studio 2010\Projects\Shane_BW\BW_WebApp\.
+11/5/2021 11:42:35.17: WriteInsert.
+11/5/2021 11:42:35.48: ProcessResultFirstSend LogID:49.
+11/5/2021 11:42:37.01: ProcessBatch LogID:49.
+11/5/2021 11:42:37.01: Read LogID:49.
+11/5/2021 11:42:38.11: Read HeaderDone LogID:49.
+11/5/2021 11:42:38.12:    Read Device:45851009999539x.
+11/5/2021 11:42:38.14:       Read Attribute:Carrier V:BEL.
+11/5/2021 11:42:38.14:       Read Attribute:Manufacturer V:aaa.
+11/5/2021 11:42:38.14:       Read Attribute:Model V:A12418Gjj.
+11/5/2021 11:42:38.14:       Read Attribute:Colour V:BLK.
+11/5/2021 11:42:38.15:       Read Attribute:Disposition V:NotAssessed.
+11/5/2021 11:42:38.15:       Read Attribute:Provider V:FSL.
+11/5/2021 11:42:38.15:       Read Attribute:Grade V:A.
+11/5/2021 11:42:38.26:       Read Attribute:Product Place V:ASSURANT.
+11/5/2021 11:42:38.26:    Read Device DONE.
+11/5/2021 11:42:38.32:    Receive Process.
+11/5/2021 11:42:39.06:    Receive Process Loaded.
+11/5/2021 11:42:39.06:    Receive Process WriteProcessLogEnd.
+11/5/2021 11:42:39.07:    WriteProcessLogEnd Finished.
+11/5/2021 11:42:39.07:    Receive Process Ready to Save.
+11/5/2021 11:42:39.11:    Receive Process Save Complete.
+11/5/2021 13:43:59.35: Started batch:Jim02 Path:C:\Users\JimHome\Documents\Visual Studio 2010\Projects\Shane_BW\BW_WebApp\.
+11/5/2021 13:43:59.35: WriteInsert.
+11/5/2021 13:43:59.66: ProcessResultFirstSend LogID:50.
+11/5/2021 13:44:07.71: ProcessBatch LogID:50.
+11/5/2021 13:44:07.73: Read LogID:50.
+11/5/2021 13:45:55.06: Read HeaderDone LogID:50.
+11/5/2021 13:45:55.09:    Read Device:458510099995302.
+11/5/2021 13:45:55.12:       Read Attribute:Carrier V:X.
+11/5/2021 13:45:55.12:       Read Attribute:Manufacturer V:ACT.
+11/5/2021 13:45:55.12:       Read Attribute:Model V:V1000H.
+11/5/2021 13:45:55.14:       Read Attribute:Colour V:BLK.
+11/5/2021 13:45:55.14:       Read Attribute:Disposition V:NotAssessed.
+11/5/2021 13:45:55.14:       Read Attribute:Provider V:FSL.
+11/5/2021 13:45:55.14:       Read Attribute:Grade V:A.
+11/5/2021 13:45:55.15:       Read Attribute:Product Place V:AID.
+11/5/2021 13:45:55.15:    Read Device DONE.
+11/5/2021 13:45:55.15:    Receive Process.
+11/5/2021 13:46:37.49:    IMEIUploadProcessor Created.
+11/5/2021 13:46:37.91:    Receive Process Loaded.
+11/5/2021 13:46:37.91:    Receive Process WriteProcessLogEnd.
+11/5/2021 13:46:37.92:    WriteProcessLogEnd Finished.
+11/5/2021 13:46:37.92:    Receive Process Ready to Save.
+11/5/2021 13:46:37.94:    Receive Process Save Complete.
+11/5/2021 15:35:46.36: Started batch:Jim01 Path:.
+11/5/2021 15:35:58.18: WriteInsert.
+11/5/2021 15:43:50.59: Started batch:Jim01 Path:.
+11/5/2021 15:43:50.61: WriteInsert.
+11/5/2021 15:45:10.15: Started batch:Jim01 Path:.
+11/5/2021 15:45:10.15: WriteInsert.
+11/5/2021 15:52:22.46: Started batch:Jim01 Path:.
+11/5/2021 15:52:22.46: WriteInsert.
+11/5/2021 15:52:43.66: ProcessResultFirstSend LogID:56.
+11/5/2021 15:52:47.09: ProcessBatch LogID:56.
+11/5/2021 15:52:47.11: Read LogID:56.
+11/5/2021 15:52:49.70: Read HeaderDone LogID:56.
+11/5/2021 15:52:49.72:    Read Device:458510099995301.
+11/5/2021 15:52:49.75:       Read Attribute:Carrier V:BEL.
+11/5/2021 15:52:49.75:       Read Attribute:Manufacturer V:aaa.
+11/5/2021 15:52:49.77:       Read Attribute:Model V:A12418Gjj.
+11/5/2021 15:52:49.77:       Read Attribute:Colour V:BLK.
+11/5/2021 15:52:49.78:       Read Attribute:Disposition V:NotAssessed.
+11/5/2021 15:52:49.78:       Read Attribute:Provider V:FSL.
+11/5/2021 15:52:49.78:       Read Attribute:Grade V:A.
+11/5/2021 15:52:49.80:       Read Attribute:Product Place V:ASSURANT.
+11/5/2021 15:52:49.80:    Read Device DONE.
+11/5/2021 15:52:49.80:    Receive Process.
+11/5/2021 15:52:52.44:    IMEIUploadProcessor Created.
+11/5/2021 15:52:59.26:    Receive Process Loaded.
+11/5/2021 15:52:59.28:    Receive Process WriteProcessLogEnd.
+11/5/2021 15:53:00.15:    WriteProcessLogEnd Finished.
+11/5/2021 15:53:00.17:    Receive Process Ready to Save.
+11/5/2021 15:53:00.19:    Receive Process Save Complete.
+13/5/2021 18:55:30.94: Started batch:Jim01 Path:.
+13/5/2021 18:55:37.73: WriteInsert.
+13/5/2021 18:57:26.57: Started batch:Jim01 Path:.
+13/5/2021 18:57:26.59: WriteInsert.
+13/5/2021 18:58:50.59: ProcessResultFirstSend LogID:58.
+13/5/2021 18:58:51.18: ProcessBatch LogID:58.
+13/5/2021 18:58:51.18: Read LogID:58.
+13/5/2021 18:58:56.95: Read HeaderDone LogID:58.
+13/5/2021 18:59:01.70:    Read Device:458510099995301.
+13/5/2021 18:59:07.47:       Read Attribute:Carrier V:BEL.
+13/5/2021 18:59:10.45:       Read Attribute:Manufacturer V:aaa.
+13/5/2021 18:59:13.13:       Read Attribute:projecttag V:1223456789.
+13/5/2021 18:59:15.94:       Read Attribute:Model V:A12418Gjj.
+13/5/2021 18:59:18.70:       Read Attribute:Colour V:BLK.
+13/5/2021 18:59:21.83:       Read Attribute:Disposition V:NotAssessed.
+13/5/2021 18:59:24.99:       Read Attribute:Provider V:FSL.
+13/5/2021 18:59:28.18:       Read Attribute:Grade V:A.
+13/5/2021 18:59:32.35:       Read Attribute:Product Place V:ASSURANT.
+13/5/2021 18:59:37.26:    Read Device DONE.
+13/5/2021 18:59:45.46:    Receive Process.
+13/5/2021 19:00:36.44:    IMEIUploadProcessor Created.
+13/5/2021 19:01:03.25:    Receive Process Loaded.
+13/5/2021 19:01:07.05:    Receive Process WriteProcessLogEnd.
+13/5/2021 19:01:55.61:    WriteProcessLogEnd Finished.
+13/5/2021 19:01:55.63:    Receive Process Ready to Save.
+13/5/2021 19:01:55.64:    Receive Process Save Complete.
+13/5/2021 19:02:43.25: Started batch:Jim99 Path:.
+13/5/2021 19:02:43.25: WriteInsert.
+13/5/2021 19:03:07.45: ProcessResultFirstSend LogID:59.
+13/5/2021 19:03:07.45: ProcessBatch LogID:59.
+13/5/2021 19:03:07.46: Read LogID:59.
+13/5/2021 19:03:14.31: Read HeaderDone LogID:59.
+13/5/2021 19:03:14.31:    Read Device:458510099995399.
+13/5/2021 19:03:14.33:       Read Attribute:Carrier V:BEL.
+13/5/2021 19:03:14.34:       Read Attribute:Manufacturer V:aaa.
+13/5/2021 19:03:14.34:       Read Attribute:projecttag V:1223456789.
+13/5/2021 19:03:14.34:       Read Attribute:Model V:A12418Gjj.
+13/5/2021 19:03:14.36:       Read Attribute:Colour V:BLK.
+13/5/2021 19:03:14.36:       Read Attribute:Disposition V:NotAssessed.
+13/5/2021 19:03:14.36:       Read Attribute:Provider V:FSL.
+13/5/2021 19:03:14.36:       Read Attribute:Grade V:A.
+13/5/2021 19:03:14.37:       Read Attribute:Product Place V:ASSURANT.
+13/5/2021 19:03:14.37:    Read Device DONE.
+13/5/2021 19:03:14.37:    Receive Process.
+13/5/2021 19:03:14.44:    IMEIUploadProcessor Created.
+13/5/2021 19:03:16.99:    Receive Process Loaded.
+13/5/2021 19:03:16.99:    Receive Process WriteProcessLogEnd.
+13/5/2021 19:03:17.00:    WriteProcessLogEnd Finished.
+13/5/2021 19:03:17.00:    Receive Process Ready to Save.
+13/5/2021 19:03:17.02:    Receive Process Save Complete.
+13/5/2021 19:53:07.59: Started batch:Jim98 Path:.
+13/5/2021 19:53:07.64: WriteInsert.
+13/5/2021 19:53:07.73: ProcessResultFirstSend LogID:60.
+13/5/2021 19:53:07.75: ProcessBatch LogID:60.
+13/5/2021 19:53:07.75: Read LogID:60.
+13/5/2021 19:53:07.77: Read HeaderDone LogID:60.
+13/5/2021 19:53:07.77:    Read Device:458510099995398.
+13/5/2021 19:53:07.78:       Read Attribute:Carrier V:BEL.
+13/5/2021 19:53:07.78:       Read Attribute:Manufacturer V:aaa.
+13/5/2021 19:53:07.78:       Read Attribute:projecttag V:1223456789.
+13/5/2021 19:53:07.80:       Read Attribute:Model V:A12418Gjj.
+13/5/2021 19:53:07.80:       Read Attribute:Colour V:BLK.
+13/5/2021 19:53:07.80:       Read Attribute:Disposition V:NotAssessed.
+13/5/2021 19:53:07.81:       Read Attribute:Provider V:FSL.
+13/5/2021 19:53:07.81:       Read Attribute:Grade V:A.
+13/5/2021 19:53:07.81:       Read Attribute:Product Place V:ASSURANT.
+13/5/2021 19:53:07.83:    Read Device DONE.
+13/5/2021 19:53:07.83:    Receive Process.
+13/5/2021 19:53:08.05:    IMEIUploadProcessor Created.
+13/5/2021 19:53:37.63:    Receive Process Loaded.
+13/5/2021 19:53:37.65:    Receive Process WriteProcessLogEnd.
+13/5/2021 19:53:37.66:    WriteProcessLogEnd Finished.
+13/5/2021 19:53:37.66:    Receive Process Ready to Save.
+13/5/2021 19:53:37.68:    Receive Process Save Complete.
+13/5/2021 20:01:49.08: Started batch:Jim97 Path:.
+13/5/2021 20:01:49.09: WriteInsert.
+13/5/2021 20:01:49.19: ProcessResultFirstSend LogID:61.
+13/5/2021 20:01:49.20: ProcessBatch LogID:61.
+13/5/2021 20:01:49.22: Read LogID:61.
+13/5/2021 20:01:49.22: Read HeaderDone LogID:61.
+13/5/2021 20:01:49.23:    Read Device:458510099995397.
+13/5/2021 20:01:49.23:       Read Attribute:Carrier V:BEL.
+13/5/2021 20:01:49.25:       Read Attribute:Manufacturer V:aaa.
+13/5/2021 20:01:49.25:       Read Attribute:projecttag V:1223456789.
+13/5/2021 20:01:49.26:       Read Attribute:Model V:A12418Gjj.
+13/5/2021 20:01:49.26:       Read Attribute:Colour V:BLK.
+13/5/2021 20:01:49.26:       Read Attribute:Disposition V:NotAssessed.
+13/5/2021 20:01:49.28:       Read Attribute:Provider V:FSL.
+13/5/2021 20:01:49.28:       Read Attribute:Grade V:A.
+13/5/2021 20:01:49.28:       Read Attribute:Product Place V:ASSURANT.
+13/5/2021 20:01:49.30:    Read Device DONE.
+13/5/2021 20:01:49.30:    Receive Process.
+13/5/2021 20:01:49.50:    IMEIUploadProcessor Created.
+13/5/2021 20:02:20.88:    Receive Process Loaded.
+13/5/2021 20:02:20.90:    Receive Process WriteProcessLogEnd.
+13/5/2021 20:02:20.90:    WriteProcessLogEnd Finished.
+13/5/2021 20:02:20.91:    Receive Process Ready to Save.
+13/5/2021 20:02:20.93:    Receive Process Save Complete.
+13/5/2021 20:28:35.86: Started batch:Jim96 Path:.
+13/5/2021 20:28:35.87: WriteInsert.
+13/5/2021 20:28:35.95: ProcessResultFirstSend LogID:62.
+13/5/2021 20:28:36.00: ProcessBatch LogID:62.
+13/5/2021 20:28:36.00: Read LogID:62.
+13/5/2021 20:28:36.01: Read HeaderDone LogID:62.
+13/5/2021 20:28:36.01:    Read Device:458510099995396.
+13/5/2021 20:28:36.03:       Read Attribute:Carrier V:BEL.
+13/5/2021 20:28:36.03:       Read Attribute:Manufacturer V:aaa.
+13/5/2021 20:28:36.04:       Read Attribute:projecttag V:1223456789.
+13/5/2021 20:28:36.04:       Read Attribute:Model V:A12418Gjj.
+13/5/2021 20:28:36.04:       Read Attribute:Colour V:BLK.
+13/5/2021 20:28:36.04:       Read Attribute:Disposition V:NotAssessed.
+13/5/2021 20:28:36.06:       Read Attribute:Provider V:FSL.
+13/5/2021 20:28:36.06:       Read Attribute:Grade V:A.
+13/5/2021 20:28:36.06:       Read Attribute:Product Place V:ASSURANT.
+13/5/2021 20:28:36.08:    Read Device DONE.
+13/5/2021 20:28:36.08:    Receive Process.
+13/5/2021 20:28:36.26:    IMEIUploadProcessor Created.
+13/5/2021 20:28:44.03:    Receive Process Loaded.
+13/5/2021 20:28:44.04:    Receive Process WriteProcessLogEnd.
+13/5/2021 20:28:44.06:    WriteProcessLogEnd Finished.
+13/5/2021 20:28:44.06:    Receive Process Ready to Save.
+13/5/2021 20:28:44.09:    Receive Process Save Complete.
+13/5/2021 20:34:22.22: Started batch:Jim95 Path:.
+13/5/2021 20:34:22.23: WriteInsert.
+13/5/2021 20:34:22.36: ProcessResultFirstSend LogID:63.
+13/5/2021 20:34:22.37: ProcessBatch LogID:63.
+13/5/2021 20:34:22.37: Read LogID:63.
+13/5/2021 20:34:22.39: Read HeaderDone LogID:63.
+13/5/2021 20:34:22.39:    Read Device:458510099995395.
+13/5/2021 20:34:22.41:       Read Attribute:Carrier V:BEL.
+13/5/2021 20:34:22.41:       Read Attribute:Manufacturer V:aaa.
+13/5/2021 20:34:22.42:       Read Attribute:projecttag V:1223456789.
+13/5/2021 20:34:22.42:       Read Attribute:Model V:A12418Gjj.
+13/5/2021 20:34:22.44:       Read Attribute:Colour V:BLK.
+13/5/2021 20:34:22.44:       Read Attribute:Disposition V:NotAssessed.
+13/5/2021 20:34:22.44:       Read Attribute:Provider V:FSL.
+13/5/2021 20:34:22.47:       Read Attribute:Grade V:A.
+13/5/2021 20:34:22.47:       Read Attribute:Product Place V:ASSURANT.
+13/5/2021 20:34:22.47:    Read Device DONE.
+13/5/2021 20:34:22.48:    Receive Process.
+13/5/2021 20:34:22.67:    IMEIUploadProcessor Created.
+13/5/2021 20:34:23.03:    Receive Process Loaded.
+13/5/2021 20:34:23.03:    Receive Process WriteProcessLogEnd.
+13/5/2021 20:34:23.05:    WriteProcessLogEnd Finished.
+13/5/2021 20:34:23.06:    Receive Process Ready to Save.
+13/5/2021 20:34:23.08:    Receive Process Save Complete.

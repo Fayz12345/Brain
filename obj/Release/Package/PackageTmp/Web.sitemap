@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap >
+    <siteMapNode  title="Home" url="~/Default.aspx" description="" roles="*">
+        <siteMapNode title="Work" url="~/Receive.aspx"  description="" roles="*" />
+        <!--<siteMapNode title="Help Desk" url="http://192.168.0.245/portal"  description="" roles="*" />-->
+
+
+        <!--<siteMapNode title="IDC" url=""  description="" roles="*" >
+            -->
+        <!--<siteMapNode title="Inventory Distribution" url="~/IFSLocationUpdate.aspx" description="" roles="*" >-->
+        <siteMapNode title="Inventory Distribution" url="" description="" roles="*" >
+            <!--<siteMapNode title="Location/SKU/Condition" url="~/IFSLocationManagement/IFS_ReSKU.aspx" description="" roles="*" />-->
+             
+            <!--<siteMapNode title="Device Utilities" url="~/IFSLocationManagement/IFSDeviceUtility.aspx" description="" roles="*" />-->
+            <!--</siteMapNode>-->
+            <!--<siteMapNode title="Parts Inventory Distribution" url="~/IFSLocationPartUpdate.aspx" description="" roles="*" />-->
+
+            <!--<siteMapNode title="Cycle Count Dashboard" url="~/Dashboard/CC_Control.aspx" description="" roles="*" />
+            <siteMapNode title="Cycle Count" url="~/LocationManagement/DeviceCycleCount.aspx" description="" roles="*" />-->
+
+            <!--<siteMapNode title="Cycle Count Dashboard - Parts" url="~/Dashboard/CC_ControlPart.aspx" description="" roles="*" />
+            <siteMapNode title="Cycle Count - Parts" url="~/IFSLocationManagement/IFSCycleCountPart.aspx" description="" roles="*" />-->            
+            
+            
+            <siteMapNode title="PI Devices" url="~/LocationManagement/DevicePI.aspx" description="" roles="*" />
+            <!--<siteMapNode title="PI Parts" url="~/IFSLocationManagement/IFSPartPI.aspx" description="" roles="*" />-->            
+            <siteMapNode title="PI Device Dashboard" url="~/Dashboard/PI_Control.aspx" description="" roles="*" />
+            <!--<siteMapNode title="PI Part Dashboard" url="~/Dashboard/PI_ControlParts.aspx" description="" roles="*" />-->
+        </siteMapNode>
+
+        <siteMapNode title="Dashboard" url=""  description="" roles="*" >
+            <siteMapNode title="Repair" url="~/Dashboard/Dashboard_Repair_01.aspx" description="" roles="*" />
+            <siteMapNode title="QC" url="~/Dashboard/Dashboard_QC_01.aspx" description="" roles="*" />
+            <siteMapNode title="Product Place" url="~/Dashboard/Dashboard_ProdPlace_01.aspx" description="" roles="*" />
+            <siteMapNode title="Cellbie" url="~/Dashboard/Dashboard_Cellbie.aspx" description="" roles="*" />
+            <!--<siteMapNode title="Blackbelt" url="~/Dashboard/Blackbelt.aspx" description="" roles="*" />-->
+        </siteMapNode>       
+        <siteMapNode title="Utility" url=""  description="" roles="*" >
+            <!--<siteMapNode title="Bulk Shipping" url="~/ReceiveDetailQuickShip.aspx" description="" roles="*" />            
+            <siteMapNode title="Bulk Location Update" url="~/ReceiveDetail_XBinLocation.aspx" description="" roles="*" />
+            <siteMapNode title="Docking" url="~/ReceiveDocking.aspx" description="" roles="*" />-->
+            <siteMapNode title="Search" url="~/Search.aspx" description="" roles="*" />
+            <!--<siteMapNode title="Header Maintenance" url="~/ReceiveHeader.aspx" description="" roles="Administrators,Supervisors" />-->
+            <!--<siteMapNode title="Sku/Project Change Utility" url="~/IFSLocationManagement/IFS_ReSKU.aspx" description="" roles="*" />-->
+
+            <siteMapNode title="IMEI Device Utility" url="~/Maintenance/Maint_IMEIDeviceUtility.aspx" description="" roles="*" />
+            <siteMapNode title="SKU Utility" url="~/Maintenance/Maint_SKUUtility.aspx" description="" roles="*" />
+            <siteMapNode title="Scan Command Utility" url="~/Maintenance/Maint_ScanCommand.aspx" description="" roles="*" />
+
+            <siteMapNode title="Transfer" url="~/ReceiveDetailTransfer.aspx" description="" roles="*" />
+            <!--<siteMapNode title="Dashboard" url="~/Dashboard/Dashboard_Dealer.aspx" description="" roles="*" />-->
+            <!--<siteMapNode title="Process Authorization" url="~/ReceiveDetailAuthorization.aspx" description="" roles="*" />-->
+           <siteMapNode title="Bin Label Creator" url="~/Utility/Util_BinLabelCreator.aspx" description="" roles="*" />
+            <siteMapNode title="Message Queue" url="~/ReceiveDetailMessageQueue.aspx" description="" roles="*" />
+            <!--<siteMapNode title="Test Bishop Interface" url="~/Utility/BishopTest.aspx" description="" roles="*" />-->            
+            <!--<siteMapNode title="Waybill Receive" url="~/ReceiveWaybill.aspx" description="" roles="*" />-->
+            <!--<siteMapNode title="Inventory Distribution Center" url=""  description="" roles="*" >
+                <siteMapNode title="PreReceive System" url="~/ReceiveWaybill02.aspx" description="" roles="*" />
+                <siteMapNode title="Inventory Distribution" url="~/IDC_LocationUpdate.aspx" description="" roles="*" />
+                <siteMapNode title="Inventory Distribution Sales" url="~/IDC_LocationUpdateSales.aspx" description="" roles="*" />
+            </siteMapNode>-->            
+            <!--<siteMapNode title="Error Reporting" url="~/Maintenance/Maint_ErrorReporting.aspx" description="" roles="*" />
+            <siteMapNode title="Barcode Creator" url="~/Utility/Util_BarcodeCreator.aspx" description="" roles="*" />
+            <siteMapNode title="Create Refurb Record" url="~/Utility/Util_CreateRefurbRecord.aspx" description="" roles="*" />-->
+            <!--<siteMapNode title="Discrepancy Log" url="~/Maintenance/Maint_LogDiscrepancy.aspx" description="" roles="*" />-->
+            <!--<siteMapNode title="Cycle Count" url="~/Utility/CycleCount.aspx" description="" roles="*" />-->
+        </siteMapNode>
+        <siteMapNode title="Parts" url=""  description="" roles="*" >
+
+            <siteMapNode title="Parts Maintenance" url="~/Maintenance/Maint_MasterPartTable.aspx"  description="" roles="*" />
+            <!--<siteMapNode title="Parts Management(old)" url="~/Maintenance/Maint_MasterPartTable_B.aspx"  description="" roles="*" />-->            
+            <siteMapNode title="Parts Management" url="~/Maintenance/PartUpdate.aspx"  description="" roles="*" >
+                <siteMapNode title="Part Class Type" url="~/Maintenance/Maint_MasterPartsClassType.aspx"  description="" roles="*" />
+                <siteMapNode title="Part Transaction Type" url="~/Maintenance/Maint_MasterPartsTransactionType.aspx"  description="" roles="*" />
+            </siteMapNode>
+            <siteMapNode title="Parts Distribution (Parts/Tech Assigned Product)" url="~/Maintenance/Maint_MasterPartsTechAssign.aspx" description="" roles="*" />
+            <siteMapNode title="Part Request Dashboard" url="~/Dashboard/Dashboard_MasterPartsRequests.aspx" description="" roles="*" />
+
+
+            <!--<siteMapNode title="Parts Management" url="~/PartsBulkLoad.aspx" description="" roles="*" />-->
+        </siteMapNode>
+        <!--<siteMapNode title="Submit" url="~/Receive.aspx?x=Client" description="" roles="*" />-->
+        <!--<siteMapNode title="Dashboard" url="~/Dashboard/Dashboard_Dealer.aspx?x=Client" description="" roles="*" />-->
+        <!--<siteMapNode title="Submit" url=""  description="" roles="*" >
+      <siteMapNode title="Submit" url="~/Receive.aspx?x=Client" description="" roles="*" />
+      <siteMapNode title="Dashboard" url="~/Dashboard_Dealer.aspx?x=Client" description="" roles="*" />
+    </siteMapNode>-->
+       
+        <!--<siteMapNode  title="Order Entry" url="" description="" roles="*">
+            <siteMapNode title="Available Stock" url="~/AvailableStock.aspx" description="" roles="*" />
+            <siteMapNode title="Available Stock Old" url="~/Sales_AvailableStock_1.aspx" description="" roles="*" />
+            <siteMapNode title="Order Entry" url="~/OrderEntry.aspx" description="" roles="*" />
+            <siteMapNode title="Search Order" url="~/SearchOrder.aspx" description="" roles="*" />
+            <siteMapNode title="Purchase Order" url="~/PurchaseOrder.aspx" description="" roles="*" />
+            <siteMapNode title="RMA Dashboard" url="~/Dashboard/RMADashboard.aspx" description="" roles="*" />
+        </siteMapNode>-->
+        <siteMapNode  title="Sales Order" url="" description="" roles="*">
+            <!--<siteMapNode title="Dashboard" url="~/SalesOrder/DashBoard.aspx" description="" roles="*" />-->            
+            <siteMapNode title="Order Entry" url="~/OrderEntry.aspx" description="" roles="*" />
+            <!--<siteMapNode title="Order Entry 02" url="~/OrderEntry02.aspx" description="" roles="*" />
+            <siteMapNode title="Order Entry Test" url="~/OrderEntry03.aspx" description="" roles="*" />-->
+
+            <siteMapNode title="Search Order" url="~/SearchOrder.aspx" description="" roles="*" />
+            <!--<siteMapNode title="Purchase Order" url="~/PurchaseOrder.aspx" description="" roles="*" />-->
+            <!--<siteMapNode title="RMA Dashboard" url="~/Dashboard/RMADashboard.aspx" description="" roles="*" />-->
+            <siteMapNode title="Available Stock" url="~/AvailableStock.aspx" description="" roles="*" />
+            <!--<siteMapNode title="Available Stock Old" url="~/Sales_AvailableStock_1.aspx" description="" roles="*" />-->
+        </siteMapNode>        
+        
+        
+        <!--<siteMapNode title="Dashboard" url="" description="" roles="*" >
+            <siteMapNode title="Dashboard" url="~/Dashboard/Dashboard.aspx" description="" roles="*" />
+            <siteMapNode title="WIP Board" url="~/Dashboard/BucketBoard.aspx" description="" roles="*" />
+            <siteMapNode title="Tech Lab Dashboard" url="~/Dashboard/Dashboard_TechLab.aspx" description="" roles="*" />
+        </siteMapNode>-->
+        <siteMapNode title="Admin" url=""  description="" roles="*">
+            <siteMapNode title="Client" url=""  description="" roles="*" >
+                <siteMapNode title="Client" url="~/Maintenance/Maint_Client.aspx"  description="" roles="*" />
+                <siteMapNode title="Client Status" url="~/Maintenance/Maint_Client_Status.aspx"  description="" roles="*" />
+                <siteMapNode title="Location Status" url="~/Maintenance/Maint_ClientLocation_Status.aspx"  description="" roles="*" />
+            </siteMapNode>
+            <siteMapNode title="Question" url=""  description="" roles="*" >
+                <siteMapNode title="Question" url="~/Maintenance/Maint_Question.aspx"  description="" roles="*" />
+                <siteMapNode title="Question Dependencies" url="~/Maintenance/Maint_Option_Dependencies.aspx"  description="" roles="*" />
+                <siteMapNode title="Lab Destination Bin Lookup" url="~/Maintenance/Maint_LabDestinationBinLookup.aspx"  description="" roles="*" />
+                <siteMapNode title="Question Status" url="~/Maintenance/Maint_Quest_Status.aspx"  description="" roles="*" />
+                <siteMapNode title="Answer Status" url="~/Maintenance/Maint_Option_Status.aspx"  description="" roles="*" />
+                <siteMapNode title="Question Type" url="~/Maintenance/Maint_Quest_Type.aspx"  description="" roles="*" />
+                <siteMapNode title="Answer Type" url="~/Maintenance/Maint_Option_Type.aspx"  description="" roles="*" />
+            </siteMapNode>
+            <siteMapNode title="Process" url=""  description="" roles="*" >
+                <siteMapNode title="Process" url="~/Maintenance/Maint_Process_BKUP.aspx"  description="" roles="*" />
+                <siteMapNode title="Process Status" url="~/Maintenance/Maint_Process_Status.aspx"  description="" roles="*" />
+                <siteMapNode title="Next Step Status" url="~/Maintenance/Maint_Process_NextStepStatus.aspx"  description="" roles="*" />
+            </siteMapNode>
+            <!--<siteMapNode title="Process New" url="~/Maintenance/Maint_Process.aspx"  description="" roles="*" />-->            
+            <siteMapNode title="Project" url=""  description="" roles="*" >
+                <siteMapNode title="Project" url="~/Maintenance/Maint_Project.aspx"  description="" roles="*" />
+                <siteMapNode title="Project Status" url="~/Maintenance/Maint_Proj_Status.aspx"  description="" roles="*" />
+            </siteMapNode>
+            <siteMapNode title="Model Table" url=""  description="" roles="*" >
+                <siteMapNode title="Model Table" url="~/Maintenance/Maint_MasterCarrer.aspx"  description="" roles="*" />
+                <siteMapNode title="Add Model" url="~/Maintenance/Maint_MasterCarrer.aspx?Mode=Add"  description="" roles="*" />
+                <siteMapNode title="Model-Memory Master" url="~/Maintenance/Maint_MasterModelMemory.aspx"  description="" roles="*" />                
+                <siteMapNode title="Update Stock Colour Code" url="~/Maintenance/Maint_MasterCarrer_ColourUpdate.aspx"  description="" roles="*" />
+            </siteMapNode>
+            <siteMapNode title="Master Location" url=""  description="" roles="*" >
+                <siteMapNode title="Master Location" url="~/IFSLocationManagement/IFSLocationMaster.aspx"  description="" roles="*" />
+                <siteMapNode title="Location Status" url="~/IFSLocationManagement/IFSLocationStatus.aspx"  description="" roles="*" />
+                <siteMapNode title="Location Purpose" url="~/IFSLocationManagement/IFSLocationPurpose.aspx"  description="" roles="*" />
+            </siteMapNode>            
+            <!--<siteMapNode title="SKU Master Table" url="~/Maintenance/Maint_MasterSKU.aspx"  description="" roles="*" />-->
+            <!--<siteMapNode title="IFS Transaction Log" url="~/Maintenance/IFS_InvtTranTable.aspx"  description="" roles="*" />-->            
+            <!--<siteMapNode title="Discrepancy" url="~/Maintenance/Maint_DiscrepancyDropDownRelation.aspx"  description="" roles="*" />-->
+            <siteMapNode title="Users and Roles" url=""  description="" roles="*">
+                <siteMapNode title="Role Management" url="~/Account/ManageRoles.aspx"  description="" roles="*" />
+                <siteMapNode title="User Management" url="~/Account/UserBasedAuthorization.aspx"  description="" roles="*" />
+                <siteMapNode title="Add Roles To User" url="~/Account/UsersAndRoles.aspx"  description="" roles="*" />
+                <siteMapNode title="Add New User" url="~/Account/CreateuserWizardWithRoles.aspx"  description="" roles="*" />
+                <!--<siteMapNode title="Bulk upload Accounts (with Roles)" url="~/Account/BulkLoadUsers.aspx"  description="" roles="*" />-->
+                <!--<siteMapNode title="Role Menu Authorization" url="~/Account/RoleMenuAuthorization.aspx"  description="" roles="*" />-->
+            </siteMapNode>
+            <siteMapNode title="Bulk Utility" url="~/Utility/Utility.aspx"  description="" roles="*" />
+            <siteMapNode title="Correct Incorrect IMEI" url="~/Utility/UtilityChangeIMEI.aspx"  description="" roles="*" />
+            <siteMapNode title="Test Send Email" url="~/Utility/TestSendEmail.aspx"  description="" roles="*" />
+            <siteMapNode title="Test Parse Data Stream" url="~/Utility/TestParseDataStreamData.aspx"  description="" roles="*" />            
+            <siteMapNode title="Test Parse Equeation" url="~/Utility/TestParseEquation.aspx"  description="" roles="*" />
+            <!--<siteMapNode title="PMI" url=""  description="" roles="*">
+                <siteMapNode title="PMI Transfer Dashboard" url="~/PMI_TransferDashboard.aspx"  description="" roles="*" />                
+                <siteMapNode title="Generate File01" url="~/Maintenance/PMI_Integration.aspx"  description="" roles="*" />
+            </siteMapNode>-->
+            <!--<siteMapNode title="Fast Track" url=""  description="" roles="*">
+                <siteMapNode title="Dashboard" url="~/Dashboard/Dashboard_FastTrack.aspx"  description="" roles="*" />
+           </siteMapNode>-->
+            <siteMapNode title="Holiday List" url="~/Maintenance/Maint_MasterHolidayList.aspx"  description="" roles="*" />
+            <siteMapNode title="Business Rules" url="~/Maintenance/BusinessRules.aspx"  description="" roles="*" />            
+            <siteMapNode title="System Defaults" url="~/Account/SystemDefaults.aspx"  description="" roles="*" />
+            <siteMapNode title="System Maintenance Utilities" url="~/Utility/SystemUtilities.aspx"  description="" roles="*" />
+        </siteMapNode>
+
+        <!--<siteMapNode  title="Reports" url="" description="" roles="xAdministrators,xSupervisors,xReports">
+      <siteMapNode title="Report" url="~/Report.aspx"  description="" roles="xAdministrators,xSupervisors,xReports" />
+      </siteMapNode>-->
+        <!--<siteMapNode  title="Reporting Suite" url="~/Reports/ReportExternal.aspx" description="" roles="*" />-->
+        <siteMapNode  title="Reporting" url="" description="" roles="*">
+            <siteMapNode  title="Report Suite" url="~/Reports/ReportExternal.aspx" description="" roles="*" />
+            <siteMapNode  title="Custom Report Suite" url="~/PDFReports/PDFReportUI.aspx" description="" roles="*" />
+        </siteMapNode>
+
+    </siteMapNode>
+
+</siteMap>

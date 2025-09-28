@@ -1,0 +1,2 @@
+﻿<asp:Button runat="server" CssClass="btn" />
+<asp:PasswordRecovery runat="server" />

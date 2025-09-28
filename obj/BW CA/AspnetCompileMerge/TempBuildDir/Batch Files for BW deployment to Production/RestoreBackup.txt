@@ -1,0 +1,6 @@
+﻿d:
+cd \
+
+rem Restore Backup
+xcopy d:\HTTP\wwwroot\GMPI_Website\Production_02_BKUP\*.* d:\HTTP\wwwroot\GMPI_Website\Production_02 /s
+

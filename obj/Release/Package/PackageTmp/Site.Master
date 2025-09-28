@@ -1,0 +1,192 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="BM_WebApp.SiteMaster" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<!doctype html>
+<html lang="en">
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title></title>
+    <link href="/Styles/css/main.css" rel="stylesheet" type="text/css" />
+    <%-- <link href="Styles/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet"/>--%>
+    <link href="/Styles/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+</head>
+<body>
+    <div id="loading" style="display:none">
+        <div id="preview-area">
+            <div class="spinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+            </div>
+        </div>
+    </div>
+    <form id="Form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" EnablePageMethods="true" EnablePartialRendering="true"
+        runat="server">
+        <Services>
+            <asp:ServiceReference InlineScript="False" Path="~/WebServer_01.svc" />
+        </Services>
+        <Scripts>
+            <asp:ScriptReference Path="~/scripts/jim_UtilityModules.js" />
+        </Scripts>
+    </asp:ScriptManager>
+    <header class="container-fluid bg-light px-3 py-4">
+        <div class="row">
+            <div class="col-sm">
+                <img src="/Styles/images/logo.png" class="py-3" id="logo" alt="Logo"/>
+            </div>
+            <div class="col-sm text-sm-right my-sm-auto">
+                <p><asp:Label ID="Label1" runat="server" Text="BW ... Database"/><br/>
+                <asp:Label ID="lSystem" CssClass="text-muted" runat="server"/></p>
+                <asp:LinkButton ID="lnkUnitStatus" CssClass="btn btn-outline-dark" role="button" runat="server">Unit Status Update</asp:LinkButton>
+            </div>
+        </div>
+    </header>
+    <%--        <header class="container-fluid bg-light px-3 py-4">
+            <div class="row">
+    	        <div class="col-sm">
+                    <h1><asp:Label runat="server" Text="BW ... Database"/></h1>
+                    <p><asp:Label ID="lSystem" runat="server"/></p>
+                </div>
+                <div class="col-sm text-sm-right my-sm-auto">
+                    <asp:LinkButton ID="lnkUnitStatus" CssClass="btn btn-outline-dark" role="button" runat="server">Unit Status Update</asp:LinkButton>
+                </div>
+            </div>
+        </header>--%>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <span id="main-menu">
+                    <asp:Menu DataSourceID="SiteMapDataSource2" ID="Menu2" runat="server" RenderingMode="List" IncludeStyleBlock="False" Orientation="Horizontal" StaticDisplayLevels="2" SkipLinkText="">
+                        <StaticMenuStyle CssClass="navbar-nav" />
+                        <StaticMenuItemStyle CssClass="nav-link" />
+                        <DynamicMenuStyle CssClass="dropdown-menu" />
+                        <DynamicMenuItemStyle CssClass="dropdown-item" />
+                    </asp:Menu>
+                    <asp:SiteMapDataSource ID="SiteMapDataSource2" runat="server" />
+                </span>
+                <ul class="navbar-nav ml-auto">
+                    <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+
+                        <AnonymousTemplate>
+                            <li class="nav-item">
+                                <a class="nav-link" href="~/Account/Login.aspx" id="HeadLoginStatus" runat="server">Log In</a>
+                            </li>
+                        </AnonymousTemplate>
+
+                        <LoggedInTemplate>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                                    <asp:LoginName ID="HeadLoginName" runat="server"/>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="~/Account/ChangePassword.aspx" id="A2" runat="server">Change Password</a>
+                                    <a class="dropdown-item" href="~/Account/ChangePin.aspx" id="A1" runat="server">Change Pin</a>
+                                    <asp:LoginStatus ID="HeadLoginStatus" CssClass="dropdown-item" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/" />
+                                </div>
+                            </li>
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+                </ul>
+
+            </div>
+    </nav>
+    <main class="container mb-3"><asp:ContentPlaceHolder ID="cMC" runat="server" /></main>
+    <footer class="footer">
+    <%--<asp:LinkButton ID="lnkShowTimeOutValue" runat="server">LinkButton</asp:LinkButton>--%>
+    </footer>
+
+
+
+
+    <!-- Bootstrap -->
+    <!-- CDN (internet required) -->
+    <!-- This needs to be turned on when sending to production.  *** Section below is turned off **** -->
+    <!-- ------------------------------------------------------------------------------------------------------------ -->
+<%--
+--%>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- ------------------------------------------------------------------------------------------------------------ -->
+    <!-- local (internet NOT required) -->
+    <!-- This needs to be turned on when running from home.  *** Section above is turned off **** -->
+    <!-- ------------------------------------------------------------------------------------------------------------ -->
+<%--
+    <script type="text/javascript" src="/Styles/bootstrap/assets/js/vendor/jquery-slim.min.js"></script>
+    <script type="text/javascript" src="/Styles/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+--%>
+
+
+    <!-- ------------------------------------------------------------------------------------------------------------ -->
+    <!-- -------------------------------------------------------------------------------------------- -->
+
+    <!-- Syncfusion / jquery mismatch fix?... Keep disabled for the time being. -->
+    <%--<script src="http://code.jquery.com/jquery-migrate-1.2.0.min.js" type="text/javascript"></script>--%>
+    <!-- Menu / nav fix -->
+    <script type="text/javascript">
+
+        // remove menu hover
+        Sys.WebForms.Menu._elementObjectMapper.getMappedObject = function () {
+            return false;
+        };
+
+        $(function () {
+            // remove garbage
+            $('#main-menu ul, #main-menu ul li, #main-menu ul li a').removeAttr('style');
+
+            // add missing nav classes
+            $('#main-menu ul li').not('.dynamic').addClass('nav-item');
+            $('#main-menu ul li.has-popup').addClass('dropdown');
+            $('#main-menu ul li.has-popup > a').addClass('dropdown-toggle').attr('href', '#').attr('data-toggle', 'dropdown');
+            $('#main-menu ul li.has-popup li.has-popup').removeClass('dropdown').addClass('dropdown-submenu');
+            $('a.selected').closest('li').addClass('active');
+            $('a.selected').closest('.dropdown-toggle').addClass('active');
+
+            // add submenu functionality
+            $('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
+                if (!$(this).next().hasClass('show')) {
+                    $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+                }
+                var $subMenu = $(this).next(".dropdown-menu");
+                $subMenu.toggleClass('show');
+
+                $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+                    $('.dropdown-submenu .show').removeClass("show");
+                });
+
+                return false;
+            });
+        });
+
+//        function jmbeep(times) {
+//            if (times.length == 0) { times = 1; }
+//            var i = 0;
+//            var snd = new Audio("data:audio/wav;base64,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qJrx4KOQjahZxWbcZgztj2c49nKmkId44S71j0c8eV9yDK6uPRzx5X18eDvjvQ6yKo9ZSS6l//8elePK/Lf//IInrOF/FvDoADYAGBMGb7FtErm5MXMlmPAJQVgWta7Zx2go+8xJ0UiCb8LHHdftWyLJE0QIAIsI+UbXu67dZMjmgDGCGl1H+vpF4NSDckSIkk7Vd+sxEhBQMRU8j/12UIRhzSaUdQ+rQU5kGeFxm+hb1oh6pWWmv3uvmReDl0UnvtapVaIzo1jZbf/pD6ElLqSX+rUmOQNpJFa/r+sa4e/pBlAABoAAAAA3CUgShLdGIxsY7AUABPRrgCABdDuQ5GC7DqPQCgbbJUAoRSUj+NIEig0YfyWUho1VBBBA//uQZB4ABZx5zfMakeAAAAmwAAAAF5F3P0w9GtAAACfAAAAAwLhMDmAYWMgVEG1U0FIGCBgXBXAtfMH10000EEEEEECUBYln03TTTdNBDZopopYvrTTdNa325mImNg3TTPV9q3pmY0xoO6bv3r00y+IDGid/9aaaZTGMuj9mpu9Mpio1dXrr5HERTZSmqU36A3CumzN/9Robv/Xx4v9ijkSRSNLQhAWumap82WRSBUqXStV/YcS+XVLnSS+WLDroqArFkMEsAS+eWmrUzrO0oEmE40RlMZ5+ODIkAyKAGUwZ3mVKmcamcJnMW26MRPgUw6j+LkhyHGVGYjSUUKNpuJUQoOIAyDvEyG8S5yfK6dhZc0Tx1KI/gviKL6qvvFs1+bWtaz58uUNnryq6kt5RzOCkPWlVqVX2a/EEBUdU1KrXLf40GoiiFXK///qpoiDXrOgqDR38JB0bw7SoL+ZB9o1RCkQjQ2CBYZKd/+VJxZRRZlqSkKiws0WFxUyCwsKiMy7hUVFhIaCrNQsKkTIsLivwKKigsj8XYlwt/WKi2N4d//uQRCSAAjURNIHpMZBGYiaQPSYyAAABLAAAAAAAACWAAAAApUF/Mg+0aohSIRobBAsMlO//Kk4soosy1JSFRYWaLC4qZBYWFRGZdwqKiwkNBVmoWFSJkWFxX4FFRQWR+LsS4W/rFRb/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////VEFHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU291bmRib3kuZGUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMjAwNGh0dHA6Ly93d3cuc291bmRib3kuZGUAAAAAAAAAACU=");
+//            while (i < times) {
+//                snd.play();
+//                //jmwait(100);
+//                i++;
+//            }
+//        }
+//        function jmwait(ms) {
+//            var start = new Date().getTime();
+//            var end = start;
+//            while (end < start + ms) {
+//                end = new Date().getTime();
+//            }
+//        }
+
+
+    </script>
+    <asp:ContentPlaceHolder ID="js" runat="server" />
+    </form>
+</body>
+</html>

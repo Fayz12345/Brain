@@ -1,0 +1,27 @@
+﻿d:
+cd \
+
+rem Delete any files that do not need to be moved around... EG, Temp files etc that may yet to have been cleaned.
+Del d:\HTTP\wwwroot\GMPI_Website\Production_02\Temp\*.*
+Del d:\HTTP\wwwroot\GMPI_Website\Production_02\IdAutomation\*.jpg
+Del d:\HTTP\wwwroot\GMPI_Website\Production_02\UploadedExcel\*.*
+
+Del d:\HTTP\wwwroot\GMPI_Website\Production_02_BKUP\Temp\*.*
+Del d:\HTTP\wwwroot\GMPI_Website\Production_02_BKUP\IdAutomation\*.jpg
+Del d:\HTTP\wwwroot\GMPI_Website\Production_02_BKUP\UploadedExcel\*.*
+
+Del d:\HTTP\wwwroot\GMPI_Website\Sandbox\Temp\*.*
+Del d:\HTTP\wwwroot\GMPI_Website\Sandbox\IdAutomation\*.jpg
+Del d:\HTTP\wwwroot\GMPI_Website\Sandbox\UploadedExcel\*.*
+
+
+rem Backup current production
+xcopy d:\HTTP\wwwroot\GMPI_Website\Production_02\*.* d:\HTTP\wwwroot\GMPI_Website\Production_02_BKUP/s
+
+rem Copy Sandbox deployment over to production
+xcopy d:\HTTP\wwwroot\GMPI_Website\Sandbox\*.* d:\HTTP\wwwroot\GMPI_Website\Production_02 /s
+
+rem We want to keep the Production COnfig file, copy it back.
+xcopy d:\HTTP\wwwroot\GMPI_Website\Production_02_BKUP\*.config d:\HTTP\wwwroot\GMPI_Website\Production_02
+
+

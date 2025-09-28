@@ -1,0 +1,88 @@
+/****** Object:  StoredProcedure [dbo].[GetDeviceCatalogue]    Script Date: 06/25/2017 15:24:18 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+
+
+/*
+
+
+exec GetDeviceCatalogue
+
+Select * from MasterModelMemoryLookup
+
+Create Index BishopCatGroupLastID on BishopCatalogueSendLog(BishopGroupLastID, SKU)
+Go
+*/
+
+
+-- =============================================
+ALTER PROCEDURE [dbo].[GetDeviceCatalogue]
+
+AS
+BEGIN
+SET NOCOUNT ON;
+
+
+
+Declare @mPrice numeric(18,7)
+Declare @mThisBishipGroup numeric(18)
+Declare @mLastBishipGroup numeric(18)
+Declare @mThisSendDate DateTime
+Select @mThisSendDate = GETDATE()
+Select Top 1 @mThisBishipGroup = IDENT_CURRENT( 'BishopCatalogueSendLog' )
+Select Top 1 @mLastBishipGroup = [BishopGroupID] From BishopCatalogueSendLog order by [BishopGroupID] Desc
+Select @mPrice = 0
+
+Select @mLastBishipGroup = ISNULL(@mLastBishipGroup ,-1)             
+--Print  @mThisBishipGroup
+--print  @mLastBishipGroup
+
+Insert BishopCatalogueSendLog ([BishopGroupID],[BishopGroupLastID],[SKU],[Qty],[LastOnHandQTY],[DifferenceQty],[ThisSendDate],[LastSendDate],[Allocated], Price)
+Select @mThisBishipGroup,@mLastBishipGroup, SKU, COUNT(*) as Qty, CONVERT(int, 0) as LastOnHandQTY, CONVERT(int, 0) as DifferenceQty, @mThisSendDate as ThisSendDate, @mThisSendDate as LastSendDate, CONVERT(int, 0) as Allocated
+      ,@mPrice as Price
+from ReceiveDetail r
+Inner join ReceiveDetailStatus s on r.StatusID = s.ReceiveDetailStatusID
+inner join ClientLocation CL on cl.ClientLocationID = r.ClientLocationID
+inner join Client C on cl.ClientID = c.ClientID
+Where 1 = 1 
+  and CL.ScanKey = 'BW1'
+  and Version = '000' 
+  and s.Status != 'GraveYard' 
+Group By SKU
+-- having count(*) > 0
+Order by SKU
+
+print 'looking for any sku sent last time but not this time'
+-- Any SKU in the last run that is not inside this run needs to be added.
+Insert BishopCatalogueSendLog ([BishopGroupID],[BishopGroupLastID],[SKU],[Qty],[LastOnHandQTY],[DifferenceQty],[ThisSendDate],[LastSendDate],[Allocated], Price)
+Select @mThisBishipGroup,-1, SKU, CONVERT(int, 0) as Qty, CONVERT(int, 0) as LastOnHandQTY, CONVERT(int, 0) as DifferenceQty, @mThisSendDate as ThisSendDate, @mThisSendDate as LastSendDate, CONVERT(int, 0) as Allocated, @mPrice as Price
+From BishopCatalogueSendLog b
+Where b.BishopGroupID = @mLastBishipGroup
+and b.SKU not in (Select SKU from BishopCatalogueSendLog where BishopGroupID = @mThisBishipGroup)
+
+Update BishopCatalogueSendLog Set [LastOnHandQTY] = b.QTy, [LastSendDate] = b.[ThisSendDate]
+From BishopCatalogueSendLog 
+Inner join BishopCatalogueSendLog b on BishopCatalogueSendLog.[BishopGroupLastID] = b.[BishopGroupID]
+Where BishopCatalogueSendLog.BishopGroupID = @mThisBishipGroup and BishopCatalogueSendLog.SKU = b.SKU
+
+Update BishopCatalogueSendLog Set [DifferenceQty] = QTY - LastOnHandQTY
+From BishopCatalogueSendLog 
+Where BishopGroupID = @mThisBishipGroup
+
+Select * from BishopCatalogueSendLog 
+where [BishopGroupID] = @mThisBishipGroup 
+   -- and DifferenceQty != 0
+Order by SKU
+
+
+
+
+END
+
+

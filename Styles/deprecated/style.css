@@ -1,0 +1,105 @@
+/* CSS Document */
+#ATV_TREEVIEW {
+	/*\\\\\\ compatible Mozilla, Firefox \\\\\\*/
+
+	/*-moz-user-focus: ignore;*/
+	/*-moz-user-input: disabled;*/
+	-moz-user-select: none; 
+}
+
+.treeitem {
+	margin:0 0 0 5;
+	text-align:left;
+
+	white-space:nowrap;
+	padding: 5 0 0 0;
+}
+
+/* compatible Mozilla, Firefox */
+img.button:hover {
+	cursor:pointer;cursor:hand;
+}
+
+#ATV_Toggle {
+	-moz-opacity:0.5;/* compatible Mozilla, Firefox */
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+}
+
+.TreeStyle {
+
+	cursor:default;
+
+	font-size:12px; 
+
+}
+
+.menucontent {
+
+/*	filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=3, Color='#d2d2d2', Positive='true');*/
+	position: relative;	
+	right: 2px;
+	bottom: 3px;
+	background-color:#EAEAEA;
+}
+
+.menu {
+	position: absolute;
+
+	width:120px;	
+	height:85px;
+	
+	background-color: #666; /*shadow color*/
+
+	z-index:1; 
+	
+	visibility: hidden;
+}
+
+.menuOut  { 
+	
+	cursor:default;
+	
+	color:#000;
+	border-style:solid;
+	border-width:0px 0px 0px 0px;
+	border-color:#ccc;
+	background-color:#EAEAEA;
+
+}
+
+.menuOver  { 
+	
+	cursor:default;
+
+	color:#000;
+	border-style:solid;
+	border-width:1px 1px 1px 1px;
+	border-color:#666;
+	background-color:#C8C8C8;
+
+}
+
+#menuItem {
+
+	height:20px;
+	text-align: center;
+}
+
+.item {
+	white-space:nowrap;
+}
+
+a {
+	color: #000;
+}
+
+a:visited {
+	color: #000;
+}
+
+.check {
+	width:16px;
+	height:16px;
+
+	vertical-align: middle;
+}

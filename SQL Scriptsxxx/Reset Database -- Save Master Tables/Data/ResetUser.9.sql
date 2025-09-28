@@ -1,0 +1,19 @@
+-- Delete all users except Admin and jmccomb
+aspnet_Applications
+aspnet_Membership
+aspnet_Paths
+aspnet_PersonalizationAllUsers
+aspnet_PersonalizationPerUser
+aspnet_Profile
+aspnet_Roles
+aspnet_SchemaVersions
+aspnet_Users
+aspnet_UsersInRoles
+aspnet_WebEvent_Events
+RoleAccessTable
+RoleMenuAccess
+UserAccessTable
+UserStatus
+UserTable
+
+MasterTableAcccessList

@@ -1,0 +1,6 @@
+C:\Users\JimHome\Documents\Visual Studio 2010\Projects\nCalc\NCalc - Sources\NCalc - Sources\Evaluant.Calculator\bin\Debug\NCalc.dll
+C:\Users\JimHome\Documents\Visual Studio 2010\Projects\nCalc\NCalc - Sources\NCalc - Sources\Evaluant.Calculator\bin\Debug\NCalc.pdb
+C:\Users\JimHome\Documents\Visual Studio 2010\Projects\nCalc\NCalc - Sources\NCalc - Sources\Evaluant.Calculator\bin\Debug\Antlr3.Runtime.dll
+C:\Users\JimHome\Documents\Visual Studio 2010\Projects\nCalc\NCalc - Sources\NCalc - Sources\Evaluant.Calculator\obj\Debug\NCalc.csprojResolveAssemblyReference.cache
+C:\Users\JimHome\Documents\Visual Studio 2010\Projects\nCalc\NCalc - Sources\NCalc - Sources\Evaluant.Calculator\obj\Debug\NCalc.dll
+C:\Users\JimHome\Documents\Visual Studio 2010\Projects\nCalc\NCalc - Sources\NCalc - Sources\Evaluant.Calculator\obj\Debug\NCalc.pdb
