@@ -82,3 +82,10 @@ The application connects to a SQL Server database with connection string configu
 - EPPlus for Excel file processing
 - AjaxControlToolkit for enhanced web controls
 - External API integration through Cellbie_API.cs
+
+## Hosting and database access
+
+- Brain is the **BRIDGE** app: ASP.NET on IIS 10 on Windows EC2 `i-0f252ab0aa25d1aab` (t3a.large, ca-central-1, Elastic IP 3.96.24.178), SQL Server on 1433 (DB `bridge`), FTP deploy on 21, DB backups to S3 `bridgedbbackup`. AWS account 033499555242 ("30pt"): use the AWS CLI profile **`30pt`**. The `default` and `my-app-developer` profiles point at a different account.
+- IIS is bound to the hostname `thebridgewired.net` (host header + SNI), so the bare IP returns 404 or a TLS reset. That domain expired in Aug 2026 and can't be recovered; its Let's Encrypt cert ran out on 2026-09-10. Plan: a new domain with an A record to 3.96.24.178, a new IIS binding and cert, and an update to the app's forced-HTTPS/canonical-host redirect and any hardcoded `thebridgewired.net`. Stopgap for a few machines: a hosts-file entry.
+- The `bridge` database is the live system of record (see inventory-chatbot's CLAUDE.md, "Legacy Brain database"). It only accepts whitelisted IPs, and the home IP changes, so query it through the inventory-chatbot EC2, which is whitelisted: `ssh -i ~/inventory-chatbot/BrainAddOnMBP.pem ubuntu@3.96.54.81 'cd ~/inventory-chatbot && ~/chatbot-env/bin/python -'` with a heredoc that imports `pyodbc` and `config` and connects with ODBC Driver 18 (`TrustServerCertificate=yes`). Local `sqlcmd` is broken (no unixodbc).
+- Writes are production: confirm with Fayzeen first, use a transaction, and commit only if the row count matches.
